@@ -8,12 +8,11 @@
 
 import Foundation
 
-struct Results : Codable{
-   
+struct Results : Codable {
     let hits:[Posts]
-    
 }
-struct Posts :Codable ,Identifiable{
+
+struct Posts :Codable ,Identifiable {
     var id:String{
         return objectID
     }

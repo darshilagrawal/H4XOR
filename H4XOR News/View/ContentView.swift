@@ -18,16 +18,12 @@ struct ContentView: View {
                     HStack {
                         Text(String(post.points))
                         Text(post.title)
-                        
                     }
-                   
                 }
-                
             }.navigationBarTitle("H4XOR")
         }
         .onAppear {
             self.networkManager.fetchData()
-            
         }
     }
 }
